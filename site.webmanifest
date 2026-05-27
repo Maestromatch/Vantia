@@ -1,0 +1,9 @@
+{
+  "name": "VANTIA",
+  "short_name": "VANTIA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0e0e0e",
+  "theme_color": "#0e0e0e",
+  "description": "Polerones slim fit VANTIA en Chile."
+}

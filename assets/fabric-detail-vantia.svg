@@ -1,0 +1,26 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Detalle de interior chiporro VANTIA</title>
+  <desc id="desc">Textura propia inspirada en interior chiporro beige para poleron slim fit.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="900" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B2A27"/>
+      <stop offset="0.52" stop-color="#111111"/>
+      <stop offset="1" stop-color="#B79A72"/>
+    </linearGradient>
+    <pattern id="wool" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M6 18C12 4 30 6 34 18C38 32 20 40 10 30" stroke="#F5EAD8" stroke-width="4" stroke-linecap="round" opacity="0.68"/>
+      <path d="M24 12C34 20 34 34 20 36" stroke="#CDBA9A" stroke-width="3" stroke-linecap="round" opacity="0.52"/>
+    </pattern>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="0.3"/>
+    </filter>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <path d="M106 96C288 218 570 220 790 102V980C558 842 286 842 106 970V96Z" fill="#171615"/>
+  <path d="M190 196C342 288 560 288 710 196V876C538 790 348 790 190 876V196Z" fill="#EADDC8"/>
+  <rect x="190" y="196" width="520" height="680" fill="url(#wool)" opacity="0.86" filter="url(#soft)"/>
+  <path d="M190 196C342 288 560 288 710 196" stroke="#F7EDDE" stroke-width="18" stroke-linecap="round" opacity="0.85"/>
+  <path d="M190 876C348 790 538 790 710 876" stroke="#8E7455" stroke-width="16" stroke-linecap="round" opacity="0.58"/>
+  <text x="70" y="1012" fill="#FFF9EF" font-family="Inter, Arial, sans-serif" font-size="48" font-weight="700">INTERIOR CHIPORRO</text>
+  <text x="70" y="1060" fill="#F0D5AF" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">ABRIGO POR DENTRO · SILUETA LIMPIA POR FUERA</text>
+</svg>

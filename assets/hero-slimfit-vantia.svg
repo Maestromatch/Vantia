@@ -1,0 +1,47 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Poleron slim fit VANTIA en ambiente editorial oscuro</title>
+  <desc id="desc">Ilustracion propia de un poleron slim fit neutro, sin marcas externas, sobre fondo cinematico.</desc>
+  <defs>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(960 300) rotate(119) scale(760 1040)">
+      <stop stop-color="#A4A09A"/>
+      <stop offset="0.38" stop-color="#53514D"/>
+      <stop offset="1" stop-color="#0E0E0E"/>
+    </radialGradient>
+    <linearGradient id="fabric" x1="548" y1="140" x2="1024" y2="902" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3A3936"/>
+      <stop offset="0.5" stop-color="#1F1F1E"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+    <linearGradient id="rib" x1="632" y1="732" x2="978" y2="732" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171716"/>
+      <stop offset="0.5" stop-color="#2D2C29"/>
+      <stop offset="1" stop-color="#151514"/>
+    </linearGradient>
+    <filter id="shadow" x="350" y="80" width="880" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="42" stdDeviation="54" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+    <pattern id="grain" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="8" cy="16" r="1" fill="#FFFFFF" opacity="0.05"/>
+      <circle cx="68" cy="42" r="1.2" fill="#FFFFFF" opacity="0.035"/>
+      <circle cx="104" cy="92" r="0.9" fill="#000000" opacity="0.12"/>
+      <circle cx="32" cy="86" r="1" fill="#000000" opacity="0.08"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#light)"/>
+  <rect width="1600" height="1000" fill="url(#grain)" opacity="0.55"/>
+  <path d="M0 780C270 706 440 748 650 810C870 875 1030 912 1600 760V1000H0V780Z" fill="#080808" opacity="0.56"/>
+  <g filter="url(#shadow)">
+    <path d="M690 190C642 206 598 238 574 286C545 344 536 444 518 542C500 642 474 720 438 858H666C684 774 696 702 704 642C710 597 712 559 714 520H860C862 559 864 597 870 642C878 702 890 774 908 858H1136C1100 720 1074 642 1056 542C1038 444 1029 344 1000 286C976 238 932 206 884 190C858 232 826 252 787 252C748 252 716 232 690 190Z" fill="url(#fabric)"/>
+    <path d="M690 190C712 236 744 264 787 264C830 264 862 236 884 190C862 174 835 164 806 160H768C739 164 712 174 690 190Z" fill="#141413"/>
+    <path d="M632 858H946C958 822 968 782 978 738H602C610 782 620 822 632 858Z" fill="url(#rib)"/>
+    <path d="M526 542C486 586 456 642 432 704C412 756 396 808 382 858H520C552 732 576 635 590 560L526 542Z" fill="#181817"/>
+    <path d="M1048 542C1088 586 1118 642 1142 704C1162 756 1178 808 1192 858H1054C1022 732 998 635 984 560L1048 542Z" fill="#181817"/>
+    <path d="M620 336C690 386 878 386 954 336" stroke="#51504B" stroke-width="8" stroke-linecap="round" opacity="0.38"/>
+    <path d="M688 490C724 512 852 512 888 490" stroke="#080808" stroke-width="5" stroke-linecap="round" opacity="0.42"/>
+    <path d="M706 642C740 670 838 670 870 642" stroke="#42413D" stroke-width="4" stroke-linecap="round" opacity="0.26"/>
+    <path d="M742 330C752 385 756 425 752 482" stroke="#080808" stroke-width="5" stroke-linecap="round" opacity="0.32"/>
+    <path d="M836 330C826 385 822 425 826 482" stroke="#080808" stroke-width="5" stroke-linecap="round" opacity="0.32"/>
+  </g>
+  <text x="86" y="114" fill="#FFF9EF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700" opacity="0.92">VANTIA</text>
+  <text x="86" y="168" fill="#B79A72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700">SLIM FIT ESSENTIALS</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg width="1000" height="1200" viewBox="0 0 1000 1200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Poleron slim fit VANTIA</title>
+  <desc id="desc">Ilustracion propia de poleron slim fit negro sin logos grandes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1000" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F0EA"/>
+      <stop offset="1" stop-color="#C9C5BA"/>
+    </linearGradient>
+    <linearGradient id="body" x1="278" y1="168" x2="704" y2="960" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#33312E"/>
+      <stop offset="0.52" stop-color="#171716"/>
+      <stop offset="1" stop-color="#0D0D0D"/>
+    </linearGradient>
+    <linearGradient id="chiporro" x1="388" y1="168" x2="612" y2="252" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2E8D8"/>
+      <stop offset="1" stop-color="#BDA886"/>
+    </linearGradient>
+    <filter id="drop" x="150" y="90" width="700" height="980" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="32" stdDeviation="34" flood-color="#000000" flood-opacity="0.26"/>
+    </filter>
+  </defs>
+  <rect width="1000" height="1200" fill="url(#bg)"/>
+  <g filter="url(#drop)">
+    <path d="M388 162C348 178 318 206 298 248C270 308 270 394 252 508C236 610 214 706 184 910H336C356 798 370 708 378 616C384 548 386 504 388 456H612C614 504 616 548 622 616C630 708 644 798 664 910H816C786 706 764 610 748 508C730 394 730 308 702 248C682 206 652 178 612 162C588 206 550 228 500 228C450 228 412 206 388 162Z" fill="url(#body)"/>
+    <path d="M388 162C416 208 454 236 500 236C546 236 584 208 612 162C586 150 558 144 528 142H472C442 144 414 150 388 162Z" fill="#111111"/>
+    <path d="M422 178C442 206 468 220 500 220C532 220 558 206 578 178C560 168 536 162 500 162C464 162 440 168 422 178Z" fill="url(#chiporro)"/>
+    <path d="M356 910H644C654 872 662 836 670 796H330C338 836 346 872 356 910Z" fill="#111111"/>
+    <path d="M320 292C388 342 612 342 680 292" stroke="#4A4842" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
+    <path d="M404 528C448 552 552 552 596 528" stroke="#080808" stroke-width="6" stroke-linecap="round" opacity="0.32"/>
+    <path d="M434 700C472 726 528 726 566 700" stroke="#4B4943" stroke-width="4" stroke-linecap="round" opacity="0.28"/>
+    <path d="M438 312C448 398 450 478 444 572" stroke="#090909" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
+    <path d="M562 312C552 398 550 478 556 572" stroke="#090909" stroke-width="5" stroke-linecap="round" opacity="0.3"/>
+  </g>
+  <text x="80" y="1020" fill="#0E0E0E" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">SLIM FIT</text>
+  <text x="80" y="1070" fill="#77736B" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700">INTERIOR CHIPORRO · TONOS NEUTROS</text>
+</svg>
