@@ -18,6 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   background: var(--bone);
@@ -85,10 +91,10 @@ a {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(120deg, rgba(12, 12, 12, 0.72), rgba(12, 12, 12, 0.14) 54%, rgba(12, 12, 12, 0.7)),
-    radial-gradient(circle at 68% 22%, rgba(183, 154, 114, 0.28), transparent 32%),
-    linear-gradient(135deg, #0d0d0d 0%, #343330 44%, #111 100%),
-    url("assets/photos/hero-model.jpg");
+    linear-gradient(120deg, rgba(12, 12, 12, 0.28), rgba(12, 12, 12, 0.02) 56%, rgba(12, 12, 12, 0.08)),
+    radial-gradient(circle at 78% 26%, rgba(183, 154, 114, 0.12), transparent 34%),
+    url("assets/photos/hero-model.jpg"),
+    linear-gradient(135deg, #0d0d0d 0%, #343330 44%, #111 100%);
 }
 
 .hero-photo::after,
@@ -107,8 +113,8 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(12, 12, 12, 0.12), rgba(12, 12, 12, 0.74)),
-    linear-gradient(90deg, rgba(12, 12, 12, 0.76), rgba(12, 12, 12, 0.08));
+    linear-gradient(180deg, rgba(12, 12, 12, 0.02), rgba(12, 12, 12, 0.42)),
+    linear-gradient(90deg, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0) 60%);
 }
 
 .hero-content {
@@ -304,8 +310,8 @@ details p {
   background-image:
     linear-gradient(180deg, rgba(12, 12, 12, 0.12), rgba(12, 12, 12, 0.48)),
     radial-gradient(circle at 48% 18%, rgba(183, 154, 114, 0.2), transparent 34%),
-    linear-gradient(145deg, #151515 0%, #393734 50%, #101010 100%),
-    url("assets/photos/male-fit.jpg");
+    url("assets/photos/male-fit.jpg"),
+    linear-gradient(145deg, #151515 0%, #393734 50%, #101010 100%);
 }
 
 .photo-female {
@@ -314,8 +320,8 @@ details p {
   background-image:
     linear-gradient(180deg, rgba(12, 12, 12, 0.08), rgba(12, 12, 12, 0.5)),
     radial-gradient(circle at 58% 28%, rgba(243, 240, 234, 0.12), transparent 34%),
-    linear-gradient(145deg, #0f0f0f 0%, #49453f 50%, #151515 100%),
-    url("assets/photos/female-fit.jpg");
+    url("assets/photos/female-fit.jpg"),
+    linear-gradient(145deg, #0f0f0f 0%, #49453f 50%, #151515 100%);
 }
 
 .mood-section {
@@ -348,16 +354,16 @@ details p {
   min-height: 620px;
   background-image:
     linear-gradient(180deg, rgba(12, 12, 12, 0.04), rgba(12, 12, 12, 0.56)),
-    linear-gradient(135deg, #22211f 0%, #5b5650 46%, #111 100%),
-    url("assets/photos/couple-fit.jpg");
+    url("assets/photos/couple-fit.jpg"),
+    linear-gradient(135deg, #22211f 0%, #5b5650 46%, #111 100%);
 }
 
 .photo-detail {
   min-height: 430px;
   background-image:
     linear-gradient(180deg, rgba(12, 12, 12, 0.08), rgba(12, 12, 12, 0.44)),
-    linear-gradient(135deg, #b79a72 0%, #2a2825 48%, #0f0f0f 100%),
-    url("assets/photos/chiporro-detail.jpg");
+    url("assets/photos/chiporro-detail.jpg"),
+    linear-gradient(135deg, #b79a72 0%, #2a2825 48%, #0f0f0f 100%);
 }
 
 .section-heading.compact {
@@ -436,9 +442,26 @@ details p {
   padding-top: 20px;
 }
 
+.future-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 26px;
+}
+
 .future-section h2 {
   max-width: 780px;
-  margin-bottom: 26px;
+}
+
+.brand-seal {
+  display: block;
+  width: clamp(96px, 14vw, 180px);
+  height: clamp(96px, 14vw, 180px);
+  border: 1px solid rgba(12, 12, 12, 0.16);
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 18px 48px rgba(12, 12, 12, 0.14);
 }
 
 .future-line {
@@ -575,6 +598,10 @@ details p {
     grid-template-columns: 1fr auto;
   }
 
+  .nav-cta {
+    grid-column: 2;
+  }
+
   .nav-links {
     display: none;
   }
@@ -623,28 +650,47 @@ details p {
   }
 
   .site-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
     padding: 16px 18px;
   }
 
   .nav-cta {
-    font-size: 12px;
+    display: none;
   }
 
   .hero {
     min-height: 90svh;
   }
 
+  .hero-photo {
+    background-position: 68% center;
+  }
+
   .hero-content {
+    width: 100%;
+    max-width: 100%;
     padding: 0 20px 54px;
   }
 
   .hero-copy {
+    max-width: 100%;
     font-size: 17px;
   }
 
-  .hero-actions,
+  .hero-note {
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    width: min(330px, calc(100vw - 60px));
+    max-width: 100%;
+  }
+
   .button {
     width: 100%;
+    max-width: 100%;
   }
 
   .section {
@@ -667,6 +713,11 @@ details p {
   .price-stack div {
     display: grid;
     gap: 6px;
+  }
+
+  .future-head {
+    grid-template-columns: 1fr;
+    align-items: start;
   }
 
   .mobile-sticky-cta {

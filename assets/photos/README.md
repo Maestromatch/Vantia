@@ -9,6 +9,7 @@ Guarda aqui las fotos reales para que la web deje de usar placeholders editorial
 - `female-fit.jpg` - mujer usando poleron slim fit, frente o espejo limpio.
 - `couple-fit.jpg` - dos personas con tonos neutros, ideal para comunicar unisex.
 - `chiporro-detail.jpg` - close-up real del interior chiporro.
+- `logo-seal.png` - sello/logo VANTIA para uso editorial sutil en la web.
 
 ## Reglas
 
