@@ -10,6 +10,9 @@ Guarda aqui las fotos reales para que la web deje de usar placeholders editorial
 - `couple-fit.jpg` - dos personas con tonos neutros, ideal para comunicar unisex.
 - `chiporro-detail.jpg` - close-up real del interior chiporro.
 - `logo-seal.png` - sello/logo VANTIA para uso editorial sutil en la web.
+- `vantia-rack-close.jpg` - recorte limpio de polerones en rack para la vitrina del producto.
+- `vantia-rack-clean.jpg` - recorte de colores neutros del drop inicial.
+- `vantia-folded-clean.jpg` - recorte de polerones doblados para textura/abrigo.
 
 ## Reglas
 
