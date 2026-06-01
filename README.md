@@ -1,39 +1,44 @@
-# Web estatica VANTIA(R)
+# Web estática VANTIA®
 
-Landing/catalogo propio para ejecutar la opcion C: usar `vantiastore.com` sin depender de Shopify como tienda completa.
+Landing/catálogo propio en `vantiastore.com`, sin depender de Shopify como tienda completa.
 
-Actualizacion clave: el producto se posiciona como **poleron slim fit**, no oversize.
+**Producto actual:** poleron canguro premium con chiporro por dentro y bolsillo canguro.
+**Campaña:** Día del Padre — "El regalo perfecto para papá".
 
 ## Archivos
 
-- `index.html` - estructura de la landing.
-- `styles.css` - identidad visual y responsive.
-- `script.js` - scroll suave.
-- `deploy-dns.md` - pasos para publicar y apuntar el dominio.
-- `CNAME` - dominio para GitHub Pages.
-- `_headers` - cabeceras basicas para Cloudflare Pages.
-- `robots.txt` y `sitemap.xml` - indexacion basica.
-- `assets/` - visuales propios controlados de VANTIA, sin fotos externas de otra marca.
-- `404.html` - pagina de error simple.
-- `diagnostico-landing-slim-fit.md` - diagnostico y estrategia corregida para vender slim fit.
-- `auditoria-web-seo-profunda-2026-05-27.md` - auditoria profunda de conversion, SEO, CTA, producto visual y pendientes.
-- `diagnostico-aura-editorial-v2.md` - correccion de aura visual: editorial humano, slots para fotos reales y expansion futura precisa.
+- `index.html` — estructura de la landing.
+- `styles.css` — identidad visual y responsive.
+- `script.js` — scroll suave y tono del header.
+- `deploy-dns.md` — pasos para publicar y apuntar el dominio.
+- `CNAME` — dominio para GitHub Pages.
+- `_headers` — cabeceras básicas para Cloudflare Pages.
+- `vercel.json` — configuración de despliegue en Vercel.
+- `robots.txt` y `sitemap.xml` — indexación básica.
+- `site.webmanifest` — manifiesto PWA.
+- `assets/` — visuales propios de VANTIA.
+- `404.html` — página de error simple.
+
+## Producto y precios
+
+- Colores: gris claro, gris oscuro, negro, café oscuro.
+- Tallas: S, M, L, XL.
+- Lanzamiento: 1 x $13.990 · 2 x $21.990 · 3 x $29.990 CLP.
+- Envíos: a domicilio (con recargo según dirección), regiones disponibles, Región Metropolitana.
 
 ## Modelo de venta
 
 ```text
-Instagram/Reels -> vantiastore.com -> producto slim fit/talla/precio -> WhatsApp +56 9 5493 4812
+Instagram/Reels -> vantiastore.com -> color/talla/precio -> WhatsApp +56 9 5493 4812
 ```
 
 ## Pendientes antes de publicar fuerte
 
-1. Reemplazar imagenes editoriales temporales por fotos reales de polerones slim fit VANTIA.
-2. Confirmar colores/tallas disponibles.
-3. Confirmar entrega/envio por comuna.
-4. Reemplazar slots editoriales por fotos reales en `assets/photos/`.
+1. Reemplazar las imágenes de producto por fotografía real cuando esté disponible
+   (mismas proporciones; ver assets/photos/README.md).
+2. Confirmar stock real por color y talla.
+3. Confirmar valores y tiempos de envío por comuna.
 
-## Como probar local
+## Cómo probar local
 
-Abrir `index.html` directo en navegador.
-
-No requiere build, Node ni servidor.
+Abrir index.html directo en el navegador. No requiere build, Node ni servidor.
