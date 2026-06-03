@@ -16,6 +16,9 @@
     <meta name="geo.region" content="CL" />
     <meta name="geo.placename" content="Chile" />
     <link rel="canonical" href="https://vantiastore.com/" />
+    <link rel="alternate" hreflang="es-cl" href="https://vantiastore.com/" />
+    <link rel="alternate" hreflang="es" href="https://vantiastore.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://vantiastore.com/" />
     <link rel="preload" as="image" href="assets/photos/hero-model.jpg" />
     <link rel="preload" as="image" href="assets/brand/vantia-wordmark.png" />
     <meta name="robots" content="index, follow" />
@@ -33,6 +36,7 @@
     <meta property="og:image:type" content="image/jpeg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Poleron canguro premium VANTIA con chiporro por dentro, en tonos neutros" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Poleron canguro premium VANTIA® · Día del Padre" />
     <meta
@@ -40,6 +44,7 @@
       content="Poleron canguro con chiporro por dentro y bolsillo canguro. El regalo perfecto para papá."
     />
     <meta name="twitter:image" content="https://vantiastore.com/assets/brand/og-vantia.jpg" />
+    <meta name="twitter:image:alt" content="Poleron canguro premium VANTIA con chiporro por dentro" />
     <link rel="icon" href="assets/brand/vantia-icon.png" type="image/png" />
     <link rel="apple-touch-icon" href="assets/brand/vantia-icon.png" />
     <link rel="manifest" href="site.webmanifest" />
@@ -51,6 +56,14 @@
       {
         "@context": "https://schema.org",
         "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://vantiastore.com/#website",
+            "url": "https://vantiastore.com/",
+            "name": "VANTIA",
+            "inLanguage": "es-CL",
+            "publisher": { "@id": "https://vantiastore.com/#organization" }
+          },
           {
             "@type": "Organization",
             "@id": "https://vantiastore.com/#organization",
@@ -73,7 +86,15 @@
             "@id": "https://vantiastore.com/#poleron-canguro-premium",
             "name": "Poleron Canguro Premium VANTIA",
             "brand": { "@type": "Brand", "name": "VANTIA" },
-            "image": "https://vantiastore.com/assets/brand/og-vantia.jpg",
+            "url": "https://vantiastore.com/#poleron-canguro-premium",
+            "sku": "VANTIA-CANGURO-CHIPORRO",
+            "mpn": "VANTIA-CANGURO-CHIPORRO",
+            "image": [
+              "https://vantiastore.com/assets/photos/vantia-rack-clean.jpg",
+              "https://vantiastore.com/assets/photos/vantia-folded-clean.jpg",
+              "https://vantiastore.com/assets/photos/chiporro-detail.jpg",
+              "https://vantiastore.com/assets/brand/og-vantia.jpg"
+            ],
             "description": "Poleron canguro premium con chiporro por dentro y bolsillo canguro. Abrigado, suave y en tonos neutros. El regalo perfecto para papá.",
             "category": "Ropa y accesorios",
             "material": "Algodón con forro chiporro (borrega) por dentro",
