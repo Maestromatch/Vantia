@@ -1,20 +1,25 @@
 :root {
-  --black: #0D0D0D;
-  --white: #F5F5F5;
-  --gray-mid: #A6A6A6;
-  --gray-light: #D4D4D4;
-  --black-soft: #1A1A1A;
-  --black-deep: #050505;
-  --gray-dim: #6E6E6E;
-  --line: rgba(245, 245, 245, 0.16);
-  --line-dark: rgba(13, 13, 13, 0.18);
+  /* Tema claro cálido. NOTA: --white se reutiliza como color de TEXTO (oscuro)
+     en todo el CSS heredado; por eso aquí vale un tono tinta, no blanco.
+     Para blanco real usar --true-white. */
+  --true-white: #FFFFFF;
+  --white: #211C16;          /* texto principal (oscuro) */
+  --black: #14110E;          /* oscuro real (footer/botón dark) */
+  --black-deep: #100D0B;
+  --ink: #F6F2EB;            /* superficies claras / fallback hero */
+  --bone: #F6F2EB;           /* fondo de página + intro band */
+  --charcoal: #ECE6DC;       /* bandas comprar/mood */
+  --black-soft: #EDE7DD;     /* tarjetas, pills, tabla */
+  --cream-2: #ECE6DC;
+  --gray-mid: #8A8175;
+  --gray-light: #6E665B;     /* etiquetas (oscuro para contraste) */
+  --gray-dim: #9A9186;
+  --ash: #6B6258;            /* texto secundario */
+  --camel: #9A7A4E;          /* acento cálido */
+  --line: rgba(28, 24, 19, 0.14);
+  --line-dark: rgba(28, 24, 19, 0.14);
   --product-camel: #B79A72;
   --product-bone: #F3F0EA;
-  --ink: var(--black);
-  --charcoal: var(--black-soft);
-  --ash: var(--gray-mid);
-  --camel: var(--gray-mid);
-  --bone: var(--black);
   --radius: 4px;
   --max: 1180px;
 }
@@ -1177,4 +1182,74 @@ details p {
     height: 18px;
     flex: none;
   }
+}
+
+/* ============================================================
+   Tema claro — ajustes de zonas que van sobre foto/oscuro
+   ============================================================ */
+
+/* Header flotante: se mantiene oscuro-glass sobre el hero */
+.site-header {
+  color: var(--true-white);
+}
+
+/* Hero: texto claro sobre la foto */
+.hero-content {
+  color: var(--true-white);
+}
+.hero .eyebrow {
+  color: #ECDBC0;
+}
+.hero-tag {
+  color: rgba(245, 245, 245, 0.82);
+}
+
+/* Botón fantasma vive solo en el hero (sobre foto) */
+.button-ghost {
+  color: var(--true-white);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Botones oscuros: tinta sobre claro */
+.button-dark,
+.button-light {
+  background: var(--black-deep);
+  color: var(--true-white);
+  border-color: var(--black-deep);
+}
+
+/* Pastilla de la galería: blanco sobre pill oscura */
+.product-photo figcaption {
+  color: var(--true-white);
+}
+
+/* Banda mood y pasos de compra: texto secundario legible en claro */
+.mood-copy p,
+.steps p {
+  color: var(--ash);
+}
+.steps div {
+  border-color: var(--line);
+}
+
+/* Franja de confianza en claro */
+.trust-strip {
+  background: var(--cream-2);
+  border-bottom-color: var(--line);
+}
+.trust-strip span {
+  color: var(--ash);
+}
+
+/* Footer se mantiene oscuro para rematar la página */
+.site-footer {
+  background: var(--black-deep);
+  color: rgba(245, 245, 245, 0.72);
+  border-top-color: rgba(255, 255, 255, 0.12);
+}
+.site-footer .brand-mark {
+  color: var(--true-white);
+}
+.site-footer a {
+  color: rgba(245, 245, 245, 0.86);
 }
