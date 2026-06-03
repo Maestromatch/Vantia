@@ -110,11 +110,10 @@ a {
 .hero-photo {
   position: absolute;
   inset: 0;
-  background-position: 60% 20%;
+  background-position: center 22%;
   background-image:
-    linear-gradient(120deg, rgba(12, 12, 12, 0.14), rgba(12, 12, 12, 0.02) 56%, rgba(12, 12, 12, 0.04)),
-    radial-gradient(circle at 78% 26%, rgba(183, 154, 114, 0.12), transparent 34%),
-    url("assets/photos/hero-model.jpg"),
+    linear-gradient(180deg, rgba(8, 8, 8, 0.18), rgba(8, 8, 8, 0.5)),
+    url("assets/photos/couple-fit.jpg"),
     linear-gradient(135deg, #0d0d0d 0%, #343330 44%, #111 100%);
 }
 
@@ -134,8 +133,8 @@ a {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(12, 12, 12, 0.12), rgba(12, 12, 12, 0.46)),
-    linear-gradient(90deg, rgba(5, 5, 5, 0.78), rgba(5, 5, 5, 0.18) 54%, rgba(5, 5, 5, 0) 78%);
+    linear-gradient(180deg, rgba(8, 8, 8, 0.06), rgba(8, 8, 8, 0.66)),
+    linear-gradient(90deg, rgba(5, 5, 5, 0.74), rgba(5, 5, 5, 0.3) 58%, rgba(5, 5, 5, 0.06) 86%);
 }
 
 .hero-content {
@@ -244,6 +243,24 @@ h2 {
   border-color: var(--white);
 }
 
+.button-wa {
+  gap: 9px;
+  background: #25D366;
+  color: #08361f;
+  border-color: #25D366;
+}
+
+.button-wa:hover {
+  background: #1ebe5a;
+  border-color: #1ebe5a;
+}
+
+.button .wa-ico {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
 .button-ghost {
   color: var(--white);
   border-color: rgba(245, 245, 245, 0.54);
@@ -277,6 +294,32 @@ h2 {
 
 .intro-line:last-child {
   border-right: 0;
+}
+
+.trust-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+  justify-content: center;
+  padding: 16px 24px;
+  background: #12140f;
+  border-bottom: 1px solid var(--line);
+}
+
+.trust-strip span {
+  display: inline-flex;
+  align-items: center;
+  color: var(--gray-light);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.trust-strip b {
+  margin-right: 7px;
+  color: #25D366;
+  font-size: 14px;
 }
 
 .section {
@@ -1118,13 +1161,20 @@ details p {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-height: 50px;
+    gap: 9px;
+    min-height: 52px;
     border-radius: var(--radius);
-    background: var(--ink);
-    color: var(--white);
+    background: #25D366;
+    color: #08361f;
     font-size: 13px;
     font-weight: 800;
     text-transform: uppercase;
-    box-shadow: 0 14px 34px rgba(12, 12, 12, 0.22);
+    box-shadow: 0 14px 34px rgba(8, 40, 24, 0.34);
+  }
+
+  .mobile-sticky-cta .wa-ico {
+    width: 18px;
+    height: 18px;
+    flex: none;
   }
 }
