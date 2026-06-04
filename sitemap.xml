@@ -41,4 +41,18 @@
       <image:title>Conjunto Mujer VANTIA: chaqueta con gorro y pantalon flare, interior polar</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://www.vantiastore.com/conjunto-hombre</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.vantiastore.com/assets/photos/conjunto-h-negro.jpg</image:loc>
+      <image:title>Conjunto hombre polar VANTIA: poleron con gorro y buzo negro</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.vantiastore.com/assets/photos/conjunto-h-gris.jpg</image:loc>
+      <image:title>Conjunto hombre polar VANTIA gris claro</image:title>
+    </image:image>
+  </url>
 </urlset>
