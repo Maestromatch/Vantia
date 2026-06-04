@@ -1308,39 +1308,81 @@ details p {
   filter: brightness(1.06);
 }
 
-/* Cross-sell "También para ella" */
-.cross-sell {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: var(--cream-2);
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+/* Hero: fila de confianza (4 ✓) */
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
 }
-.cross-sell-photo {
-  min-height: 440px;
-  background-image: url("assets/photos/mujer-onmodel.jpg");
-  background-size: cover;
-  background-position: center 12%;
-}
-.cross-sell-copy {
-  align-self: center;
-  padding: clamp(36px, 5vw, 64px);
-}
-.cross-sell-copy h2 {
-  margin: 8px 0 12px;
-  font-size: clamp(28px, 3.2vw, 42px);
-  color: var(--white);
-}
-.cross-sell-copy p {
-  max-width: 420px;
-  margin: 0 0 24px;
-  color: var(--ash);
-  font-size: 16px;
-  line-height: 1.6;
+.hero-trust li {
+  color: rgba(245, 245, 245, 0.92);
+  font-size: 12.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 @media (max-width: 760px) {
-  .cross-sell { grid-template-columns: 1fr; }
-  .cross-sell-photo { min-height: 360px; }
+  .hero-actions { flex-direction: column; align-items: stretch; }
+  .hero-actions .button { width: 100%; }
+  .hero-trust li { font-size: 12px; }
+}
+
+/* Prueba social (capturas WhatsApp + fotos de clientes reales) */
+.sp-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 0 0 28px;
+}
+.sp-stats div {
+  text-align: center;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--cream-2);
+}
+.sp-stats b {
+  display: block;
+  font-size: clamp(26px, 4vw, 40px);
+  color: var(--white);
+  line-height: 1;
+}
+.sp-stats span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--ash);
+}
+.sp-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+.sp-shot {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+}
+.sp-shot img {
+  display: block;
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+.sp-cta {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 760px) {
+  .sp-stats { grid-template-columns: 1fr 1fr; }
+  .sp-grid { grid-template-columns: 1fr 1fr; }
+  .sp-shot img { height: 260px; }
 }
 
 /* Ofertas de lanzamiento (compartido home + páginas de producto) */
