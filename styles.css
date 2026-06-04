@@ -1391,8 +1391,21 @@ details p {
 .offer-price {
   margin: 0;
   color: var(--white);
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 800;
+}
+.offer-price s {
+  margin-right: 8px;
+  color: var(--gray-dim);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration-thickness: 2px;
+}
+.offer-sub {
+  margin: 3px 0 0;
+  color: var(--ash);
+  font-size: 13px;
+  font-weight: 700;
 }
 .offer-card .button {
   margin-top: 8px;
