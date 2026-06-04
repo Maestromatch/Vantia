@@ -1307,3 +1307,38 @@ details p {
   transform: translateY(-1px);
   filter: brightness(1.06);
 }
+
+/* Cross-sell "También para ella" */
+.cross-sell {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--cream-2);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.cross-sell-photo {
+  min-height: 440px;
+  background-image: url("assets/photos/mujer-onmodel.jpg");
+  background-size: cover;
+  background-position: center 12%;
+}
+.cross-sell-copy {
+  align-self: center;
+  padding: clamp(36px, 5vw, 64px);
+}
+.cross-sell-copy h2 {
+  margin: 8px 0 12px;
+  font-size: clamp(28px, 3.2vw, 42px);
+  color: var(--white);
+}
+.cross-sell-copy p {
+  max-width: 420px;
+  margin: 0 0 24px;
+  color: var(--ash);
+  font-size: 16px;
+  line-height: 1.6;
+}
+@media (max-width: 760px) {
+  .cross-sell { grid-template-columns: 1fr; }
+  .cross-sell-photo { min-height: 360px; }
+}
