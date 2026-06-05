@@ -1384,6 +1384,29 @@ details p {
   text-decoration: line-through;
 }
 
+/* Bloque de video de producto */
+.video-band {
+  display: grid;
+  grid-template-columns: 1fr 0.82fr;
+  gap: clamp(20px, 4vw, 52px);
+  align-items: center;
+}
+.video-band .vb-copy { max-width: 480px; }
+.video-band .vb-copy h2 { margin: 8px 0 12px; }
+.video-band .vb-copy p { color: var(--ash); margin: 0 0 22px; font-size: 16px; line-height: 1.6; }
+.video-band video {
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  margin: 0 auto;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: #000;
+}
+@media (max-width: 760px) {
+  .video-band { grid-template-columns: 1fr; }
+}
+
 /* Banner de preventa (home) */
 .preorder-banner {
   display: flex;
