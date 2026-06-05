@@ -169,7 +169,7 @@
           <h1>Polerón Signature · Preorden</h1>
           <p class="hero-copy">Algodón premium 330grs, corte slim u oversized, bordado VANTIA.</p>
           <div class="price-pre">
-            <s>$39.990</s><b>$29.990</b><em>precio preventa</em>
+            <s>$39.990</s><b>$29.990</b><em>preventa · solo producto</em>
           </div>
           <div class="hero-actions hero-actions-center" aria-label="Acciones principales" style="margin-top:22px">
             <a class="button button-wa cta-glow" href="#reservar">Reservar mi talla</a>
@@ -269,12 +269,8 @@
           <h2>Asegura tu talla — sin pagar ahora</h2>
           <p>Déjanos tus datos y te contactamos por WhatsApp para confirmar tu reserva. El pago es contra entrega al llegar (7 a 10 días).</p>
         </div>
-        <div class="reserva-ok" id="reservaOk">✓ ¡Reserva recibida! Te contactaremos por WhatsApp para confirmar. Gracias por sumarte al primer drop.</div>
-        <form class="reserva-form" action="https://formsubmit.co/Vaantiastore@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Nueva reserva — Preventa Signature VANTIA" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://www.vantiastore.com/preventa?ok=1" />
+        <div class="reserva-ok" id="reservaOk">✓ ¡Listo! Te abrimos WhatsApp con tu reserva — solo presiona enviar para confirmar tu talla del primer drop.</div>
+        <form class="reserva-form" id="reservaForm">
           <div class="full">
             <label for="r-nombre">Nombre</label>
             <input id="r-nombre" type="text" name="Nombre" placeholder="Tu nombre" required />
@@ -360,10 +356,23 @@
 
     <script src="script.js"></script>
     <script>
-      if (location.search.indexOf('ok=1') !== -1) {
-        var ok = document.getElementById('reservaOk');
-        if (ok) { ok.style.display = 'block'; ok.scrollIntoView({ block: 'center' }); }
-      }
+      (function () {
+        var form = document.getElementById('reservaForm');
+        if (!form) return;
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          if (!form.checkValidity()) { form.reportValidity(); return; }
+          var v = function (n) { return form.elements[n] ? form.elements[n].value.trim() : ''; };
+          var t = 'Hola VANTIA, quiero RESERVAR en preventa el Polerón Signature.\n'
+            + 'Nombre: ' + v('Nombre') + '\n'
+            + 'Modelo: ' + v('Modelo') + ' / Talla: ' + v('Talla') + ' / Cantidad: ' + v('Cantidad') + '\n'
+            + 'Color: ' + v('Color') + ' / Comuna: ' + v('Comuna') + '\n'
+            + 'WhatsApp: ' + v('WhatsApp') + (v('Email') ? (' / Email: ' + v('Email')) : '');
+          var ok = document.getElementById('reservaOk');
+          if (ok) { ok.style.display = 'block'; ok.scrollIntoView({ block: 'center' }); }
+          window.open('https://wa.me/56954934812?text=' + encodeURIComponent(t), '_blank');
+        });
+      })();
     </script>
   </body>
 </html>
