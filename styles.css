@@ -929,6 +929,8 @@ details p {
   grid-template-columns: 1fr auto auto auto;
   align-items: center;
   gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
   padding: 36px clamp(18px, 4vw, 52px);
   border-top: 1px solid var(--line);
   color: var(--ash);
