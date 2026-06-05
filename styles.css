@@ -1569,6 +1569,40 @@ details p {
   font-weight: 700;
 }
 
+/* Reseñas de clientes */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 10px;
+}
+.review-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--cream-2);
+}
+.review-stars { color: #e0a800; font-size: 15px; letter-spacing: 2px; }
+.review-quote { margin: 0; color: var(--white); font-size: 15px; line-height: 1.55; }
+.review-author { margin: 0; font-size: 13px; font-weight: 800; color: var(--ash); }
+.review-sample {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--gray-mid);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 2px 7px;
+}
+
 /* Pagar online (MercadoPago) */
 .pay-online {
   display: flex;
