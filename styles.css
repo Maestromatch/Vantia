@@ -1379,6 +1379,10 @@ details p {
   display: flex;
   justify-content: center;
 }
+.size-pills .agotado {
+  opacity: 0.45;
+  text-decoration: line-through;
+}
 @media (max-width: 760px) {
   .sp-stats { grid-template-columns: 1fr 1fr; }
   .sp-grid { grid-template-columns: 1fr 1fr; }
