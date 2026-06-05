@@ -1334,10 +1334,30 @@ details p {
 /* Prueba social (capturas WhatsApp + fotos de clientes reales) */
 .sp-stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 14px;
   margin: 0 0 28px;
 }
+
+/* Badge de urgencia (parpadeante) */
+.urgency-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #c0392b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  box-shadow: 0 6px 18px rgba(192, 57, 43, 0.4);
+  animation: urgBlink 1.5s ease-in-out infinite;
+}
+@keyframes urgBlink { 0%, 100% { opacity: 1; } 50% { opacity: 0.55; } }
+@media (prefers-reduced-motion: reduce) { .urgency-badge { animation: none; } }
 .sp-stats div {
   text-align: center;
   padding: 18px;
