@@ -1548,6 +1548,32 @@ details p {
   font-size: 13px;
   font-weight: 700;
 }
+
+/* Pagar online (MercadoPago) */
+.pay-online {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+.pay-online .pay-label {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--ash);
+}
+.button-pay {
+  gap: 6px;
+  padding: 0 16px;
+  min-height: 44px;
+  background: #009ee3;
+  color: #fff;
+  border-color: #009ee3;
+}
+.button-pay:hover { background: #008fcc; border-color: #008fcc; }
+.pay-note { margin: 8px 0 0; font-size: 12px; color: var(--gray-mid); }
 .offer-card .button {
   margin-top: 8px;
 }
