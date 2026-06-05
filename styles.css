@@ -1383,6 +1383,39 @@ details p {
   opacity: 0.45;
   text-decoration: line-through;
 }
+
+/* Banner de preventa (home) */
+.preorder-banner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 16px;
+  padding: 16px 24px;
+  background: var(--black-deep);
+  color: var(--true-white);
+  text-align: center;
+  transition: filter 160ms ease;
+}
+.preorder-banner:hover { filter: brightness(1.12); }
+.preorder-banner .pb-badge {
+  background: var(--camel);
+  color: #fff;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.preorder-banner .pb-text { font-size: 14px; font-weight: 600; color: rgba(245,245,245,0.92); }
+.preorder-banner .pb-text b { color: #fff; font-weight: 800; }
+.preorder-banner .pb-cta {
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #25d366;
+}
 @media (max-width: 760px) {
   .sp-stats { grid-template-columns: 1fr 1fr; }
   .sp-grid { grid-template-columns: 1fr 1fr; }
