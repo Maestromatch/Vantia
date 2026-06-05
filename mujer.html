@@ -82,9 +82,23 @@
         background-repeat: no-repeat;
         background-color: #f3f0ea;
       }
+      .mujer-colors { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      .mujer-colors figure { margin: 0; }
+      .mujer-colors .ph {
+        height: 400px;
+        border: 1px solid var(--line);
+        border-radius: var(--radius);
+        background-color: #fff;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .mujer-colors p { margin: 12px 0 0; font-size: 13px; font-weight: 800; text-transform: uppercase; }
       @media (max-width: 760px) {
         .mujer-gallery { grid-template-columns: 1fr; }
         .mujer-gallery .product-photo { min-height: 420px; }
+        .mujer-colors { grid-template-columns: 1fr 1fr; }
+        .mujer-colors .ph { height: 320px; }
       }
     </style>
     <script type="application/ld+json">
@@ -128,7 +142,7 @@
             "description": "Conjunto de dos piezas para mujer: chaqueta con gorro y cierre completo + pantalón flare, con interior polar suave que abriga de verdad. Diseño femenino y cómodo para el invierno. Azul marino, tallas S/M y M/L.",
             "category": "Ropa de mujer",
             "material": "Tela suave con interior polar",
-            "color": "Azul marino",
+            "color": ["Azul marino", "Café", "Gris claro", "Gris oscuro"],
             "size": ["S/M", "M/L"],
             "audience": { "@type": "PeopleAudience", "suggestedGender": "female" },
             "areaServed": {
@@ -201,7 +215,7 @@
             </a>
             <a class="button button-ghost" href="#drop">Ver conjunto</a>
           </div>
-          <p class="hero-note">1 conjunto $29.990 · 2 conjuntos $53.990.<br />Tallas S/M y M/L · Azul marino.</p>
+          <p class="hero-note">1 conjunto $29.990 · 2 conjuntos $53.990.<br />Tallas S/M y M/L · 4 colores.</p>
         </div>
       </section>
 
@@ -228,7 +242,7 @@
             <p>
               Dos piezas: chaqueta con gorro y cierre completo + pantalón flare, con interior polar
               suave que abriga de verdad. Diseño femenino y cómodo para el día a día del invierno.
-              Azul marino, fácil de combinar.
+              En azul marino, café, gris claro y gris oscuro.
             </p>
             <div class="launch-badge">Precio especial</div>
             <div class="price-stack" aria-label="Precios">
@@ -253,6 +267,19 @@
               <figcaption>El conjunto · interior polar</figcaption>
             </figure>
           </div>
+        </div>
+      </section>
+
+      <section class="section palette-section" id="colores" aria-label="Colores disponibles">
+        <div class="section-kicker">Más colores</div>
+        <div class="section-heading compact">
+          <h2>También en café, gris claro y gris oscuro</h2>
+          <p>El mismo conjunto premium, ahora en cuatro tonos. Color principal: azul marino.</p>
+        </div>
+        <div class="mujer-colors">
+          <figure><div class="ph" style="background-image:url('assets/photos/mujer-cafe.jpg')" role="img" aria-label="Conjunto mujer polar en café"></div><p>Café</p></figure>
+          <figure><div class="ph" style="background-image:url('assets/photos/mujer-gris-claro.jpg')" role="img" aria-label="Conjunto mujer polar en gris claro"></div><p>Gris claro</p></figure>
+          <figure><div class="ph" style="background-image:url('assets/photos/mujer-gris-oscuro.jpg')" role="img" aria-label="Conjunto mujer polar en gris oscuro"></div><p>Gris oscuro</p></figure>
         </div>
       </section>
 
@@ -291,7 +318,7 @@
           <div class="size-pills">
             <span>S/M</span><span>M/L</span>
           </div>
-          <p class="size-note">Disponible en azul marino. ¿Dudas con la talla? Escríbenos tu estatura y peso por WhatsApp y te orientamos antes de reservar.</p>
+          <p class="size-note">Disponible en azul marino, café, gris claro y gris oscuro. ¿Dudas con la talla? Escríbenos tu estatura y peso por WhatsApp y te orientamos antes de reservar.</p>
         </div>
       </section>
 
